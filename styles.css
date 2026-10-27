@@ -144,7 +144,6 @@ button {
   padding: 0.8em 1.4em;
   font-weight: 500;
   font-size: 0.9rem;
-  text-transform: lowercase;
   transition: transform 0.2s ease-in-out;
 }
 
@@ -243,6 +242,10 @@ main {
 
 .nav__list-item {
   margin-left: 1.5em;
+}
+
+.nav__group-label {
+  display: none;
 }
 
 .nav__hamburger {
@@ -643,7 +646,7 @@ main {
 
   .nav__list {
     flex-direction: column;
-    padding: 4em 0;
+    padding: 2em 1.5em;
     position: absolute;
     right: 0;
     left: 0;
@@ -652,6 +655,7 @@ main {
     width: 0;
     overflow: hidden;
     transition: width 0.2s ease-in-out;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   }
 
   .display-nav-list {
@@ -659,7 +663,24 @@ main {
   }
 
   .nav__list-item {
-    margin: 0.5em 0;
+    margin: 0.3em 0;
+  }
+
+  .nav__group-label {
+    display: block;
+    font-size: 0.75rem;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-top: 1em;
+    margin-bottom: 0.2em;
+    margin-left: 0;
+    padding-left: 0.5em;
+    border-left: 2px solid #2563eb;
+  }
+
+  .nav__list-item:first-child.nav__group-label {
+    margin-top: 0;
   }
 
   .nav__hamburger {
