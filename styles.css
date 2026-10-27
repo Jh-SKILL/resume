@@ -645,36 +645,35 @@ main {
   }
 
   .nav__list {
-    flex-direction: column;
-    padding: 2em 1.5em;
-    position: fixed;
-    right: 0;
-    left: 0;
-    top: 5em;
-    background-color: #fff;
-    width: 100%;
-    height: 0;
-    overflow: hidden;
-    transition: height 0.3s ease-in-out;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-    z-index: 1000;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em;
+    position: static;
+    width: auto;
+    height: auto;
+    max-height: none;
+    overflow: visible;
+    background: transparent;
+    box-shadow: none;
+    z-index: auto;
     margin: 0;
+    padding: 0;
   }
 
   .display-nav-list {
-    height: calc(100vh - 5em);
-    overflow-y: auto;
+    height: auto;
+    overflow: visible;
   }
 
   .nav__list-item {
-    margin: 0.8em 0;
-    font-size: 1rem;
+    margin: 0;
+    font-size: 0.85rem;
     text-align: center;
   }
 
   .nav__hamburger {
-    display: flex;
-    margin-left: 0.8em;
+    display: none;
   }
 
   .about {
