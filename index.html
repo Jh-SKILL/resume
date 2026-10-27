@@ -1,0 +1,727 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="胡君豪 · AI 驱动的复合型创作者" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>胡君豪 · AI 驱动的复合型创作者</title>
+  </head>
+  <body class="light" id="top">
+    <header class="header center">
+      <h3>
+        <a href="#top" class="link">HJ.</a>
+      </h3>
+
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#about">关于</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#main-projects">主要项目</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#other-exp">其他经历</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">技能证书</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">联系</a>
+          </li>
+        </ul>
+
+        <button type="button" aria-label="切换主题" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          type="button"
+          aria-label="切换导航"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About -->
+      <div class="about" id="about">
+        <div class="about__left">
+          <img class="about__avatar" src="assets/avatar.jpg" alt="胡君豪" />
+          <div class="about__meta">
+            <div class="about__meta-item"><span class="about__meta-label">籍贯</span>广东河源</div>
+            <div class="about__meta-item"><span class="about__meta-label">常驻</span>广州花都 / 东莞松山湖</div>
+            <div class="about__meta-item"><span class="about__meta-label">意向</span>东莞 / 广州（可调整）</div>
+            <div class="about__meta-item"><span class="about__meta-label">面貌</span>共青团员</div>
+          </div>
+        </div>
+        <div class="about__right">
+          <h1>你好，我是 <span class="about__name">胡君豪。</span></h1>
+          <h2 class="about__role">AI 驱动的复合型创作者。</h2>
+          <p class="about__desc">
+            东莞职业技术学院物联网应用技术专业大三学生。习惯用 AI 工具把一件事从头做到尾——
+            从一个想法、一份方案，到内容生产、技术实现，再到传播和用户运营。
+            做过 200+ 日活的 QQ 群智能机器人，独立运营过校园自媒体，也开过饮品店。
+          </p>
+
+          <div class="about__contact center">
+            <a href="胡君豪-个人简历.pdf" target="_blank" rel="noopener">
+              <span class="btn btn--outline">查看简历 PDF</span>
+            </a>
+
+            <a
+              href="https://github.com/Jh-SKILL"
+              aria-label="github"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+
+            <a
+              href="mailto:3195499634@qq.com"
+              aria-label="email"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 主要项目经历 -->
+      <section id="main-projects" class="section projects">
+        <h2 class="section__title">主要项目经历</h2>
+        <p class="section__subtitle">技术开发与产品设计类核心项目，点击展开查看详情</p>
+
+        <div class="projects__grid">
+
+          <!-- 主要项目 1：MC 机器人 -->
+          <div class="project">
+            <div class="project__head">
+              <h3>🤖 QQ 群 MC 智能问答机器人</h3>
+              <span class="project__time">2026.06</span>
+            </div>
+            <p class="project__brief">
+              基于 Python + DeepSeek 大模型的 QQ 群机器人，服务 200+ 日活玩家。
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">DeepSeek</li>
+              <li class="project__stack-item">WebSocket</li>
+              <li class="project__stack-item">Redis</li>
+              <li class="project__stack-item">Docker</li>
+            </ul>
+            <button class="project__toggle" aria-expanded="false">
+              查看详情 <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="project__detail">
+              <div class="project__detail-inner">
+                <h4>项目描述</h4>
+                <p>
+                  面向 Minecraft 玩家社群的 QQ 群 AI 智能问答机器人「MC小助手」，联合开发。
+                  基于 DeepSeek 大模型驱动，部署在腾讯云轻量服务器上，
+                  通过 Napcat + WebSocket 对接 QQ 群消息，实时回答群友关于模组、整合包、游戏机制等问题。
+                </p>
+                <h4>关键成果</h4>
+                <ul class="project__highlights">
+                  <li>云端 Docker 部署，稳定服务 <b>200+ 日活</b>群友，平均响应 3-8 秒</li>
+                  <li>接入 DeepSeek 大模型，支持多轮连续对话（单用户 5 轮上下文）</li>
+                  <li>设计多源并行搜索链路：MC 百科、Modrinth API、Bing 搜索四路并发</li>
+                  <li>引入 Redis 三级缓存策略，处理反爬、Docker 网络等线上故障</li>
+                </ul>
+                <h4>相关链接</h4>
+                <div class="project__links">
+                  <a href="https://github.com/Jh-SKILL" class="project__link" target="_blank">
+                    <i class="fab fa-github"></i> GitHub 仓库
+                  </a>
+                  <a href="mc-bot-report.docx" class="project__link" target="_blank">
+                    <i class="fas fa-file-alt"></i> 项目文档
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 主要项目 2：PWA 工作台 -->
+          <div class="project">
+            <div class="project__head">
+              <h3>🎮 人生开放世界工作台（PWA）</h3>
+              <span class="project__time">2026.07 起</span>
+            </div>
+            <p class="project__brief">
+              把人生管理做成 RPG 风格的 PWA 效率应用，全离线本地存储，三端覆盖。
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Vanilla JS</li>
+              <li class="project__stack-item">IndexedDB</li>
+              <li class="project__stack-item">ECharts</li>
+              <li class="project__stack-item">PWA</li>
+              <li class="project__stack-item">Capacitor</li>
+            </ul>
+            <button class="project__toggle" aria-expanded="false">
+              查看详情 <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="project__detail">
+              <div class="project__detail-inner">
+                <h4>项目描述</h4>
+                <p>
+                  一款 RPG 风格的个人效率 PWA 应用——把人生目标拆解为主线任务、支线任务、日常打卡、成就系统，
+                  覆盖职业、健康、财务、学习等八大维度，所有数据存储在浏览器本地 IndexedDB，不上传服务器。
+                </p>
+                <h4>关键成果</h4>
+                <ul class="project__highlights">
+                  <li>用 Vanilla JS 零依赖实现完整应用，设计 8 张 IndexedDB 对象仓库</li>
+                  <li>用 ECharts 实现数据仪表盘：八维雷达图、趋势折线图、打卡热力图</li>
+                  <li>基于 Service Worker + Manifest 实现 PWA，支持离线打开、安装到手机主屏幕</li>
+                  <li>用 Capacitor 封装 Android APK，一套代码覆盖 H5 / 小程序 / 安卓三端</li>
+                </ul>
+                <h4>相关链接</h4>
+                <div class="project__links">
+                  <a href="https://github.com/Jh-SKILL" class="project__link" target="_blank">
+                    <i class="fab fa-github"></i> GitHub 仓库
+                  </a>
+                  <a href="workbench.html" class="project__link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i> 在线 Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 主要项目 3：康复系统 -->
+          <div class="project">
+            <div class="project__head">
+              <h3>🏥 康复中心三端协同系统（产品 MVP）</h3>
+              <span class="project__time">2026.07</span>
+            </div>
+            <p class="project__brief">
+              基于真实康复场景痛点，设计患者打卡 / 康护师督导 / 管理员统筹三端协同方案。
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">产品设计</li>
+              <li class="project__stack-item">需求分析</li>
+              <li class="project__stack-item">商业分析</li>
+              <li class="project__stack-item">AI 辅助</li>
+            </ul>
+            <button class="project__toggle" aria-expanded="false">
+              查看详情 <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="project__detail">
+              <div class="project__detail-inner">
+                <h4>项目描述</h4>
+                <p>
+                  针对康复行业「三低一高」痛点（30 天坚持率低、康护师督导效率低、管理可视化低、医疗纠纷风险高），
+                  独立完成从市场调研、产品架构、功能设计到商业化测算的完整 MVP 方案。
+                </p>
+                <h4>关键成果</h4>
+                <ul class="project__highlights">
+                  <li>15 天完成三端 × 12 模块的完整产品设计（患者端 / 康护师端 / 管理端）</li>
+                  <li>设计 15 个康复动作的 Keep 式标准化教学（视频 + 要点 + 跟练计时）</li>
+                  <li>核心目标：30 天康复坚持率从 35% 提升至 70%+</li>
+                  <li>完成市场规模分析、商业化测算、风险矩阵与 12 个月迭代路线</li>
+                </ul>
+                <h4>相关链接</h4>
+                <div class="project__links">
+                  <a href="rehab.html" class="project__link" target="_blank">
+                    <i class="fas fa-file-alt"></i> 完整项目报告
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 主要项目 4：东莞历史闯关问答 -->
+          <div class="project">
+            <div class="project__head">
+              <h3>🎮 东莞历史闯关问答（Web 小游戏）</h3>
+              <span class="project__time">课程项目</span>
+            </div>
+            <p class="project__brief">
+              用游戏化方式推广东莞历史文化，MySQL 题库 + 阿里云部署，支持跨境访问。
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">MySQL</li>
+              <li class="project__stack-item">阿里云</li>
+              <li class="project__stack-item">Web 前端</li>
+              <li class="project__stack-item">游戏化设计</li>
+            </ul>
+            <button class="project__toggle" aria-expanded="false">
+              查看详情 <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="project__detail">
+              <div class="project__detail-inner">
+                <h4>项目描述</h4>
+                <p>
+                  一个以东莞历史文化为主题的闯关问答小游戏。用游戏化方式把东莞的历史文化知识
+                  变成轻松有趣的答题闯关，让用户在玩的过程中了解东莞历史，寓教于乐。
+                </p>
+                <h4>关键成果</h4>
+                <ul class="project__highlights">
+                  <li>题目存储在 MySQL 数据库，管理员可动态增删改题目，无需改代码</li>
+                  <li>使用 Fisher-Yates 洗牌算法随机打乱题目顺序，保证每次游玩新鲜感</li>
+                  <li>闯关模式设计：3 次生命值 + 计分 + 知识点解析</li>
+                  <li>部署在阿里云服务器，支持国内与美国用户跨境快速访问</li>
+                </ul>
+                <h4>相关链接</h4>
+                <div class="project__links">
+                  <a href="dg-quiz-report.docx" class="project__link" target="_blank">
+                    <i class="fas fa-file-alt"></i> 项目报告
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 主要项目 5：真人猫鼠大战 App -->
+          <div class="project">
+            <div class="project__head">
+              <h3>🐱 真人猫鼠大战 App（东莞客松参赛）</h3>
+              <span class="project__time">东莞客松比赛</span>
+            </div>
+            <p class="project__brief">
+              线下猫鼠追逐游戏的移动端配套应用，解决组织难、定位乱、角色分配乱的痛点。
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">移动端 App</li>
+              <li class="project__stack-item">GPS 定位</li>
+              <li class="project__stack-item">实时对战</li>
+              <li class="project__stack-item">产品设计</li>
+            </ul>
+            <button class="project__toggle" aria-expanded="false">
+              查看详情 <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="project__detail">
+              <div class="project__detail-inner">
+                <h4>项目描述</h4>
+                <p>
+                  「猫鼠大战」是近两年校园和团建圈子最火的线下追逐游戏，但长期靠微信群吼和自觉，
+                  存在组织者建房难、游戏范围靠嘴说、角色分配随机混乱等痛点。
+                  本 App 一次解决定位、边界、角色分配三件最麻烦的事。
+                </p>
+                <h4>核心功能</h4>
+                <ul class="project__highlights">
+                  <li><b>范围划定</b>：房主在地图上圈出游戏边界，出界自动提醒告警</li>
+                  <li><b>角色抽签</b>：按 1:5 自动分配猫鼠阵营，被捕获的鼠当场转化为猫</li>
+                  <li><b>GPS 双视角</b>：鼠方位置周期性刷新（防反侦察），猫方实时可见位置</li>
+                  <li>支持创建房间 / 输入房间码加入，开局后 GPS 实时共享位置</li>
+                </ul>
+                <h4>相关链接</h4>
+                <div class="project__links">
+                  <a href="assets/cat-mouse-app.png" class="project__link" target="_blank">
+                    <i class="fas fa-image"></i> App 界面截图
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 其他实践经历 -->
+      <section id="other-exp" class="section projects">
+        <h2 class="section__title">其他实践经历</h2>
+        <p class="section__subtitle">运营、管理、策划类实践，体现综合能力</p>
+
+        <div class="projects__grid">
+
+          <!-- 其他 1：校园墙 -->
+          <div class="project">
+            <div class="project__head">
+              <h3>📱 校园信息墙 & 自媒体运营</h3>
+              <span class="project__time">在校期间</span>
+            </div>
+            <p class="project__brief">
+              独立运营校园表白墙与个人自媒体，用 AI 大幅压缩内容创作周期。
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">AI 工具</li>
+              <li class="project__stack-item">内容运营</li>
+              <li class="project__stack-item">短视频</li>
+              <li class="project__stack-item">PS / PR</li>
+            </ul>
+            <button class="project__toggle" aria-expanded="false">
+              查看详情 <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="project__detail">
+              <div class="project__detail-inner">
+                <h4>经历描述</h4>
+                <p>
+                  在校期间独立运营校园表白墙与个人自媒体账号。日常借助 AI 完成营销方案构思、
+                  短视频脚本撰写、图文素材设计，利用 AI 高效完成多版本创意迭代，压缩内容创作周期。
+                </p>
+                <h4>能力体现</h4>
+                <ul class="project__highlights">
+                  <li>独立完成从选题、文案到设计的全链路内容生产</li>
+                  <li>熟悉抖音、小红书等年轻创作者生态</li>
+                  <li>擅长 AI 赋能下的内容生产与用户素材产出</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 其他 2：创意音响 -->
+          <div class="project">
+            <div class="project__head">
+              <h3>🎵 创意音响 DIY & 自媒体销售</h3>
+              <span class="project__time">独立项目</span>
+            </div>
+            <p class="project__brief">
+              利用健身水杯外形独立设计开发音响设备，通过自媒体传播销售。
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">硬件 DIY</li>
+              <li class="project__stack-item">产品设计</li>
+              <li class="project__stack-item">自媒体销售</li>
+            </ul>
+            <button class="project__toggle" aria-expanded="false">
+              查看详情 <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="project__detail">
+              <div class="project__detail-inner">
+                <h4>经历描述</h4>
+                <p>
+                  利用健身水杯外形独立设计开发音响设备，参考网络开源项目案例，
+                  用 AI 工具解决开发中遇到的问题，并通过自媒体渠道传播与销售，
+                  完成从产品设计到市场营销的全链路实践。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 其他 3：饮品店+赛事 -->
+          <div class="project">
+            <div class="project__head">
+              <h3>🏪 饮品店店长 & 校园赛事策划</h3>
+              <span class="project__time">实践经历</span>
+            </div>
+            <p class="project__brief">
+              店铺运营管理 + 校园活动全流程策划，团队组织与落地执行。
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">团队管理</li>
+              <li class="project__stack-item">活动策划</li>
+              <li class="project__stack-item">新品开发</li>
+            </ul>
+            <button class="project__toggle" aria-expanded="false">
+              查看详情 <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="project__detail">
+              <div class="project__detail-inner">
+                <h4>经历描述</h4>
+                <p>
+                  担任饮品店店长，负责团队组织与日常运营，多次独立处理水电设备突发状况，
+                  独自策划开发应季新品，独立完成摄影、修图、宣传。
+                  同时独立组织策划校园篮球赛事等活动，从策划立项、赛前筹备、现场执行到赛后收尾全流程推进。
+                </p>
+                <h4>能力体现</h4>
+                <ul class="project__highlights">
+                  <li>独立管理饮品店日常运营与团队</li>
+                  <li>独立策划并执行校园篮球赛事等大型活动</li>
+                  <li>参与十五运会等大型志愿活动</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 其他 4：校园卡销售 -->
+          <div class="project">
+            <div class="project__head">
+              <h3>💳 校园卡销售团队负责人</h3>
+              <span class="project__time">连续两年</span>
+            </div>
+            <p class="project__brief">
+              带领团队参与校园卡销售，连续两年团队业绩第一。
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">团队带队</li>
+              <li class="project__stack-item">销售管理</li>
+              <li class="project__stack-item">目标达成</li>
+            </ul>
+            <button class="project__toggle" aria-expanded="false">
+              查看详情 <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="project__detail">
+              <div class="project__detail-inner">
+                <h4>经历描述</h4>
+                <p>
+                  连续两年作为团队负责人带队参与校园卡销售工作，负责团队组建、目标拆解、销售策略制定与现场执行。
+                </p>
+                <h4>关键成果</h4>
+                <ul class="project__highlights">
+                  <li><b>连续两年团队业绩第一</b></li>
+                  <li>锻炼了团队管理、目标拆解和现场执行力</li>
+                  <li>积累了面对面销售与客户沟通实战经验</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 其他 5：阿里国际站运营 -->
+          <div class="project">
+            <div class="project__head">
+              <h3>🌐 阿里国际站电商运营（兼职）</h3>
+              <span class="project__time">1 年</span>
+            </div>
+            <p class="project__brief">
+              一年阿里国际站兼职运营经验，熟悉跨境电商平台运营流程。
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">跨境电商</li>
+              <li class="project__stack-item">平台运营</li>
+              <li class="project__stack-item">国际站</li>
+            </ul>
+            <button class="project__toggle" aria-expanded="false">
+              查看详情 <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="project__detail">
+              <div class="project__detail-inner">
+                <h4>经历描述</h4>
+                <p>
+                  有一年阿里国际站兼职运营经验，熟悉跨境 B2B 平台的后台操作、产品上架、询盘处理与客户沟通流程。
+                </p>
+                <h4>能力体现</h4>
+                <ul class="project__highlights">
+                  <li>熟悉阿里国际站后台运营流程</li>
+                  <li>了解跨境电商获客与转化逻辑</li>
+                  <li>具备基础的英文商务沟通能力</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 其他 6：AI 社团 -->
+          <div class="project">
+            <div class="project__head">
+              <h3>🤝 AI 社团联合创办人</h3>
+              <span class="project__time">在校期间</span>
+            </div>
+            <p class="project__brief">
+              在校联合创办 AI 社团，策划并组织各类 AI 主题校园活动。
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">社团创办</li>
+              <li class="project__stack-item">活动策划</li>
+              <li class="project__stack-item">AI 推广</li>
+            </ul>
+            <button class="project__toggle" aria-expanded="false">
+              查看详情 <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="project__detail">
+              <div class="project__detail-inner">
+                <h4>经历描述</h4>
+                <p>
+                  在校期间联合创办 AI 社团，从零开始搭建社团框架、招募成员、策划活动，
+                  围绕 AI 工具使用、AI 创作、AI 应用落地等主题组织多场校园活动。
+                </p>
+                <h4>能力体现</h4>
+                <ul class="project__highlights">
+                  <li>从零参与社团创办与初期运营</li>
+                  <li>具备活动策划、成员招募与组织协调能力</li>
+                  <li>对 AI 技术在校园场景的推广有实际经验</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 其他 7：抖音校园 wowland 发起人 -->
+          <div class="project">
+            <div class="project__head">
+              <h3>📱 抖音校园 WowLand 发起人</h3>
+              <span class="project__time">在校期间</span>
+            </div>
+            <p class="project__brief">
+              抖音校园 WowLand 项目发起人，创办 AI 建模比赛等校园创作者活动。
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">抖音校园</li>
+              <li class="project__stack-item">创作者运营</li>
+              <li class="project__stack-item">AI 建模比赛</li>
+            </ul>
+            <button class="project__toggle" aria-expanded="false">
+              查看详情 <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="project__detail">
+              <div class="project__detail-inner">
+                <h4>经历描述</h4>
+                <p>
+                  作为抖音校园 WowLand 项目发起人，在校内推广抖音创作者生态，
+                  并牵头创办 AI 建模比赛等创作者活动，连接校园创作者与平台资源。
+                </p>
+                <h4>能力体现</h4>
+                <ul class="project__highlights">
+                  <li>抖音校园项目发起人，具备校园 KOL 资源对接能力</li>
+                  <li>牵头策划 AI 建模比赛等创作者赛事</li>
+                  <li>熟悉抖音校园创作者生态与活动运营逻辑</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 其他 8：城市定向挑战赛获奖 -->
+          <div class="project">
+            <div class="project__head">
+              <h3>🏆 大湾区城市定向挑战赛 · 最佳创作视角奖</h3>
+              <span class="project__time">2026.10</span>
+            </div>
+            <p class="project__brief">
+              一带一路大湾区青年城市定向挑战赛，担任叮叮快队队长，带队获奖。
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">团队队长</li>
+              <li class="project__stack-item">拍摄剪辑</li>
+              <li class="project__stack-item">城市定向赛</li>
+            </ul>
+            <button class="project__toggle" aria-expanded="false">
+              查看详情 <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="project__detail">
+              <div class="project__detail-inner">
+                <h4>获奖情况</h4>
+                <p>
+                  「一带一路 · 大湾区青年城市定向挑战赛 2026」湾区组路线一，
+                  带领叮叮快队获得<b>最佳创作视角奖</b>，奖金 HK$3,000。
+                </p>
+                <h4>我的角色</h4>
+                <ul class="project__highlights">
+                  <li><b>团队队长</b>：负责队伍组建、路线规划、任务分工</li>
+                  <li><b>拍摄剪辑</b>：全程负责赛事记录、素材拍摄与后期剪辑</li>
+                  <li>作品以独特的创作视角获得评委认可</li>
+                </ul>
+                <h4>相关链接</h4>
+                <div class="project__links">
+                  <a href="assets/city-orientation-award.jpg" class="project__link" target="_blank">
+                    <i class="fas fa-image"></i> 获奖合影
+                  </a>
+                  <span class="project__link project__link--todo">
+                    <i class="fas fa-video"></i> 比赛视频（待上传平台）
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 技能与证书 -->
+      <section class="section skills" id="skills">
+        <h2 class="section__title">技能与证书</h2>
+        <p class="section__subtitle">专业技能、职业证书、语言能力一览</p>
+
+        <h3 class="skills__group-title">专业技能</h3>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">AI 工具运用</li>
+          <li class="skills__list-item btn btn--plain">Python</li>
+          <li class="skills__list-item btn btn--plain">内容运营</li>
+          <li class="skills__list-item btn btn--plain">短视频脚本</li>
+          <li class="skills__list-item btn btn--plain">活动策划</li>
+          <li class="skills__list-item btn btn--plain">HTML / CSS</li>
+          <li class="skills__list-item btn btn--plain">微信小程序</li>
+          <li class="skills__list-item btn btn--plain">Android 开发</li>
+          <li class="skills__list-item btn btn--plain">数据库</li>
+          <li class="skills__list-item btn btn--plain">C / C++</li>
+          <li class="skills__list-item btn btn--plain">Java</li>
+          <li class="skills__list-item btn btn--plain">Photoshop</li>
+          <li class="skills__list-item btn btn--plain">Premiere</li>
+          <li class="skills__list-item btn btn--plain">摄影 / 剪辑</li>
+          <li class="skills__list-item btn btn--plain">Redis / Docker</li>
+        </ul>
+
+        <h3 class="skills__group-title">职业证书</h3>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">中级电工证</li>
+          <li class="skills__list-item btn btn--plain">英语 B 级（PRETCO-B）</li>
+          <li class="skills__list-item btn btn--plain">篮球裁判证</li>
+          <li class="skills__list-item btn btn--plain">篮球运动指导证</li>
+          <li class="skills__list-item btn btn--plain">红十字救护证</li>
+        </ul>
+
+        <h3 class="skills__group-title">语言能力</h3>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">普通话（二乙）</li>
+          <li class="skills__list-item btn btn--plain">粤语</li>
+        </ul>
+      </section>
+
+      <!-- 教育背景 -->
+      <section class="section education" id="education">
+        <h2 class="section__title">教育背景</h2>
+        <div class="education__list">
+          <div class="education__card">
+            <div class="education__row">
+              <h3>东莞职业技术学院</h3>
+              <span class="education__time">2024.09 - 2027.06</span>
+            </div>
+            <p class="education__major">物联网应用技术 · 专科</p>
+            <p class="education__courses">
+              主修课程：Python 程序设计、C 语言、数据库技术与应用、单片机与嵌入式应用技术、ENSP 网络
+            </p>
+            <p class="education__activities">
+              在校活动：参与电子竞赛、联合组织举办篮球赛事、参与十五运会等大型志愿活动、
+              报名参加「2026 AI 先锋未来人才大赛」并完成 AI 实战方案提交
+            </p>
+          </div>
+
+          <div class="education__card">
+            <div class="education__row">
+              <h3>广东省岭南工商第一技师学院</h3>
+              <span class="education__time">2019.09 - 2024.07</span>
+            </div>
+            <p class="education__major">机电一体化 · 中专</p>
+            <p class="education__courses">
+              主修课程：机械基础、电工技术、电子技术、PLC 编程、机电设备维修
+            </p>
+            <p class="education__activities">
+              在校期间考取中级电工证，具备电工实操与电路检修基础
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 联系我 -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">联系我</h2>
+        <p class="section__subtitle">欢迎交流合作、实习机会、技术问题</p>
+        <a href="mailto:3195499634@qq.com">
+          <span class="btn btn--outline">3195499634@qq.com</span>
+        </a>
+        <p style="margin-top: 1rem; opacity: 0.7; font-size: 0.95rem;">
+          📱 19874090127 · 📍 广东东莞 · 🎓 东莞职业技术学院 · 2027 届
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a
+        href="https://github.com/rjshkhr/cleanfolio-minimal"
+        class="link footer__link"
+      >
+        基于 Cleanfolio Minimal 模板构建 · © 2026 胡君豪
+      </a>
+    </footer>
+
+    <div class="scroll-container">
+      <div class="scroll-top">
+        <a aria-label="回到顶部" href="#top">
+          <i aria-hidden="true" class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
