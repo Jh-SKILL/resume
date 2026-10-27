@@ -653,16 +653,16 @@ main {
     top: 5em;
     background-color: #fff;
     width: 100%;
-    max-height: 0;
+    height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
+    transition: height 0.3s ease-in-out;
     box-shadow: 0 10px 30px rgba(0,0,0,0.15);
     z-index: 1000;
     margin: 0;
   }
 
   .display-nav-list {
-    max-height: calc(100vh - 5em);
+    height: calc(100vh - 5em);
     overflow-y: auto;
   }
 
